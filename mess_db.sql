@@ -1,0 +1,18 @@
+CREATE DATABASE IF NOT EXISTS mess_db;
+USE mess_db;
+
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  email VARCHAR(100) UNIQUE,
+  password VARCHAR(100),
+  role VARCHAR(20)
+);
+
+CREATE TABLE menu (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  date DATE,
+  breakfast VARCHAR(255),
+  lunch VARCHAR(255),
+  dinner VARCHAR(255)
+);

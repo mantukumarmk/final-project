@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+.navbar {
+  background-color: #0077cc;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+.navbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+}
+.navbar .nav-links li {
+  margin-left: 20px;
+}
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  color: #fff;
+}
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.buttons .btn {
+  padding: 10px 20px;
+  margin: 5px;
+  background: #fff;
+  color: #0077cc;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.buttons .btn:hover {
+  background: #0066aa;
+  color: #fff;
+}
+.special-dishes {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+.special-dishes h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.food-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  width: 250px;
+}
+.food-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.food-card h3 {
+  margin-top: 10px;
+  color: #333;
+}
+.food-card p {
+  color: #555;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0077cc;
+  color: #fff;
+  margin-top: 40px;
+}
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
